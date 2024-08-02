@@ -183,13 +183,11 @@ INSERT INTO `playercreateinfo_action` (`race`, `class`, `button`, `action`) VALU
 -- (12, 11, 120, 68992), Darkflight Druid
 -- (12, 11, 120, 68996), Two Forms Druid
 -- (12, 11, 120, 87840), Running Wild Druid
-
+-- asdf
 UPDATE `playercreateinfo_skills` SET `racemask` = `racemask`|256|2048 WHERE `skill` = 46; -- Guns
-UPDATE `playercreateinfo_skills` SET `racemask` = `racemask`|256|2048 WHERE `skill` = 173; -- Daggers
-UPDATE `playercreateinfo_skills` SET `racemask` = `racemask`|256 WHERE `skill` = 160; -- 2h-mace goblins
 UPDATE `playercreateinfo_skills` SET `racemask` = `racemask`|256 WHERE `skill` = 109; -- Orcish language goblins
 UPDATE `playercreateinfo_skills` SET `racemask` = `racemask`|2048 WHERE `skill` = 98; -- Common language worgen
-INSERT INTO `playercreateinfo_skills` (`raceMask`, `classMask`, `skill`, `rank`, `comment`) VALUES
+REPLACE INTO `playercreateinfo_skills` (`raceMask`, `classMask`, `skill`, `rank`, `comment`) VALUES
 (2048, 8, 44, 0, 'Axes - Worgen'), -- Yes, these are hackfixes and I'm very mad about it,
 (256, 8, 54, 0, 'Maces - Goblin'), -- But right now I don't see any other way to add these.
 (2048, 0, 789, 0, 'Worgen - Racial'), -- And unfortunately, I really want worgen and goblins
