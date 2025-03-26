@@ -87,23 +87,6 @@ INSERT INTO `item_template` (`entry`, `class`, `subclass`, `SoundOverrideSubclas
 (49521, 4, 1, -1, 'Goblin Acolyte''s Pants', 62621, 1, 0, 0, 1, 0, 1, 7, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 1000, 0, 0, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 0, '', 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0),
 (49522, 4, 1, -1, 'Goblin Acolyte''s Shoes', 4143, 1, 0, 0, 1, 0, 1, 8, -1, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 1000, 0, 0, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 0, '', 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0);
 
-DELETE FROM `creature_template` WHERE `entry` IN (36613, 46754, 46755, 55272, 55273);
-INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `speed_swim`, `speed_flight`, `detection_range`, `scale`, `rank`, `dmgschool`, `DamageModifier`, `BaseAttackTime`, `RangeAttackTime`, `BaseVariance`, `RangeVariance`, `unit_class`, `unit_flags`, `unit_flags2`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `HoverHeight`, `HealthModifier`, `ManaModifier`, `ArmorModifier`, `ExperienceModifier`, `RacialLeader`, `movementId`, `RegenHealth`, `mechanic_immune_mask`, `spell_school_immune_mask`, `flags_extra`, `ScriptName`, `VerifiedBuild`) VALUES
-(36613, 0, 0, 0, 0, 0, 'Gobber', '', NULL, 0, 55, 55, 0, 120, 131072, 1, 1.14286, 1, 1, 18, 1, 0, 0, 1, 2000, 2000, 1, 1, 1, 512, 2048, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1, 3, 1, 1, 1, 0, 0, 1, 0, 0, 2, '', 12340),
-(46754, 0, 0, 0, 0, 0, 'Goblin Trike', NULL, NULL, 0, 20, 20, 0, 35, 0, 1, 1.38571, 1, 1, 20, 1, 0, 0, 1, 2000, 2000, 1, 1, 1, 33554432, 2048, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1, 1, 1, 1, 1, 0, 140, 1, 0, 0, 0, '', 0),
-(46755, 0, 0, 0, 0, 0, 'Goblin Turbo-Trike', NULL, NULL, 0, 40, 40, 0, 35, 0, 1, 1.38571, 1, 1, 20, 1, 0, 0, 1, 2000, 2000, 1, 1, 1, 33554432, 2048, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1, 1, 1, 1, 1, 0, 140, 1, 0, 0, 0, '', 0),
-(55272, 0, 0, 0, 0, 0, 'Mountain Horse', NULL, NULL, 0, 20, 20, 0, 35, 0, 1, 1.38571, 1, 1, 20, 1, 0, 0, 1, 2000, 2000, 1, 1, 1, 0, 2048, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1, 1, 1, 1, 1, 0, 140, 1, 0, 0, 0, '', 0),
-(55273, 0, 0, 0, 0, 0, 'Swift Mountain Horse', NULL, NULL, 0, 40, 40, 0, 35, 0, 1, 1.38571, 1, 1, 20, 1, 0, 0, 1, 2000, 2000, 1, 1, 1, 0, 2048, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1, 1, 1, 1, 1, 0, 140, 1, 0, 0, 0, '', 0);
-
-DELETE FROM `creature_template_model` WHERE `CreatureID` IN (36613, 46754, 46755, 55272, 55273);
-
-INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`, `VerifiedBuild`) VALUES
-	(36613, 0, 32385, 1, 1, 12340),
-	(46754, 0, 35249, 1, 1, 12340),
-	(46755, 0, 35250, 1, 1, 12340),
-    (55272, 0, 39096, 1, 1, 12340),
-	(55273, 0, 39095, 1, 1, 12340);
-
 DELETE FROM `playercreateinfo_action` WHERE `race` = 9 OR `race` = 12;
 INSERT INTO `playercreateinfo_action` (`race`, `class`, `button`, `action`) VALUES
 (9, 1, 72, 6603),
@@ -199,12 +182,14 @@ INSERT INTO `playercreateinfo_action` (`race`, `class`, `button`, `action`) VALU
 (12, 11, 96, 6603);
 -- (12, 11, 120, 68992), Darkflight Druid
 -- (12, 11, 120, 68996), Two Forms Druid
--- (12, 11, 120, 87840) Running Wild Druid
+-- (12, 11, 120, 87840), Running Wild Druid
 
 UPDATE `playercreateinfo_skills` SET `racemask` = `racemask`|256|2048 WHERE `skill` = 46; -- Guns
 UPDATE `playercreateinfo_skills` SET `racemask` = `racemask`|256 WHERE `skill` = 109; -- Orcish language goblins
 UPDATE `playercreateinfo_skills` SET `racemask` = `racemask`|2048 WHERE `skill` = 98; -- Common language worgen
-REPLACE INTO `playercreateinfo_skills` (`raceMask`, `classMask`, `skill`, `rank`, `comment`) VALUES
+
+DELETE FROM `playercreateinfo_skills` WHERE `comment` IN ('Axes - Worgen', 'Maces - Goblin', 'Worgen - Racial', 'Goblin - Racial');
+INSERT INTO `playercreateinfo_skills` (`raceMask`, `classMask`, `skill`, `rank`, `comment`) VALUES
 (2048, 8, 44, 0, 'Axes - Worgen'), -- Yes, these are hackfixes and I'm very mad about it,
 (256, 8, 54, 0, 'Maces - Goblin'), -- But right now I don't see any other way to add these.
 (2048, 0, 789, 0, 'Worgen - Racial'), -- And unfortunately, I really want worgen and goblins
@@ -213,7 +198,7 @@ REPLACE INTO `playercreateinfo_skills` (`raceMask`, `classMask`, `skill`, `rank`
 DELETE FROM `spell_script_names` WHERE `spell_id` = 69041;
 INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES (69041, 'spell_rocket_barrage');
 
-DELETE FROM `creature_model_info` WHERE `DisplayID` IN (33000, 33001, 32385, 35249, 35250, 36445, 36446, 39095, 39096);
+DELETE FROM `creature_model_info` WHERE `DisplayID` IN (29422, 29423, 32385, 35249, 35250, 36445, 36446, 39095, 39096);
 INSERT INTO `creature_model_info` (`DisplayID`, `BoundingRadius`, `CombatReach`, `Gender`, `DisplayID_Other_Gender`) VALUES
 (29422, 0.406, 1.5, 0, 0), -- Worgen
 (29423, 0.406, 1.5, 1, 0), -- Worgenette
@@ -226,12 +211,130 @@ INSERT INTO `creature_model_info` (`DisplayID`, `BoundingRadius`, `CombatReach`,
 (39096, 1, 1.5, 2, 0); -- Quik-horse
 
 DELETE FROM `creature_template` WHERE `entry` IN (36613, 46754, 46755, 55272, 55273);
-INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `speed_swim`, `speed_flight`, `detection_range`, `scale`, `rank`, `dmgschool`, `DamageModifier`, `BaseAttackTime`, `RangeAttackTime`, `BaseVariance`, `RangeVariance`, `unit_class`, `unit_flags`, `unit_flags2`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `HoverHeight`, `HealthModifier`, `ManaModifier`, `ArmorModifier`, `ExperienceModifier`, `RacialLeader`, `movementId`, `RegenHealth`, `mechanic_immune_mask`, `spell_school_immune_mask`, `flags_extra`, `ScriptName`, `VerifiedBuild`) VALUES
-(36613, 0, 0, 0, 0, 0, 32385, 0, 0, 0, 'Gobber', '', NULL, 0, 55, 55, 0, 120, 131072, 1, 1.14286, 1, 1, 18, 1, 0, 0, 1, 2000, 2000, 1, 1, 1, 512, 2048, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1, 3, 1, 1, 1, 0, 0, 1, 0, 0, 2, '', 12340),
-(46754, 0, 0, 0, 0, 0, 35249, 0, 0, 0, 'Goblin Trike', NULL, NULL, 0, 20, 20, 0, 35, 0, 1, 1.38571, 1, 1, 20, 1, 0, 0, 1, 2000, 2000, 1, 1, 1, 33554432, 2048, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1, 1, 1, 1, 1, 0, 140, 1, 0, 0, 0, '', 0),
-(46755, 0, 0, 0, 0, 0, 35250, 0, 0, 0, 'Goblin Turbo-Trike', NULL, NULL, 0, 40, 40, 0, 35, 0, 1, 1.38571, 1, 1, 20, 1, 0, 0, 1, 2000, 2000, 1, 1, 1, 33554432, 2048, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1, 1, 1, 1, 1, 0, 140, 1, 0, 0, 0, '', 0),
-(55272, 0, 0, 0, 0, 0, 39096, 0, 0, 0, 'Mountain Horse', NULL, NULL, 0, 20, 20, 0, 35, 0, 1, 1.38571, 1, 1, 20, 1, 0, 0, 1, 2000, 2000, 1, 1, 1, 0, 2048, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1, 1, 1, 1, 1, 0, 140, 1, 0, 0, 0, '', 0),
-(55273, 0, 0, 0, 0, 0, 39095, 0, 0, 0, 'Swift Mountain Horse', NULL, NULL, 0, 40, 40, 0, 35, 0, 1, 1.38571, 1, 1, 20, 1, 0, 0, 1, 2000, 2000, 1, 1, 1, 0, 2048, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1, 1, 1, 1, 1, 0, 140, 1, 0, 0, 0, '', 0);
+
+INSERT INTO `creature_template` SET
+    `entry` = 36613,
+    `name` = 'Gobber',
+    `IconName` = NULL,
+    `minlevel` = 55,
+    `maxlevel` = 55,
+    `faction` = 120,
+    `npcflag` = 131072,
+    `detection_range` = 18,
+    `BaseAttackTime` = 2000,
+    `RangeAttackTime` = 2000,
+    `unit_class` = 1,
+    `unit_flags` = 512,
+    `unit_flags2` = 2048,
+    `type` = 7,
+    `HealthModifier` = 3,
+    `flags_extra` = 2,
+    `VerifiedBuild` = '12340';
+
+DELETE FROM `creature_template_model` WHERE `CreatureID` = 36613;
+INSERT INTO `creature_template_model` SET
+    `CreatureID` = '36613',
+    `idx` = 1,
+    `CreatureDisplayID` = '32385',
+    `probability` = 1.0;
+
+INSERT INTO `creature_template` SET
+    `entry` = 46754,
+    `name` = 'Goblin Trike',
+    `subname` = NULL,
+    `IconName` = NULL,
+    `minlevel` = 20,
+    `maxlevel` = 20,
+    `faction` = 35,
+    `speed_run` = 1.38571,
+    `BaseAttackTime` = 2000,
+    `RangeAttackTime` = 2000,
+    `unit_class` = 1,
+    `unit_flags` = 33554432,
+    `unit_flags2` = 2048,
+    `type` = 9,
+    `movementId` = 140,
+    `VerifiedBuild` = '0';
+
+DELETE FROM `creature_template_model` WHERE `CreatureID` = 46754;
+INSERT INTO `creature_template_model` SET
+    `CreatureID` = '46754',
+    `idx` = 1,
+    `CreatureDisplayID` = '35249',
+    `probability` = 1.0;
+
+INSERT INTO `creature_template` SET
+    `entry` = 46755,
+    `name` = 'Goblin Turbo-Trike',
+    `subname` = NULL,
+    `IconName` = NULL,
+    `minlevel` = 40,
+    `maxlevel` = 40,
+    `faction` = 35,
+    `speed_run` = 1.38571,
+    `BaseAttackTime` = 2000,
+    `RangeAttackTime` = 2000,
+    `unit_class` = 1,
+    `unit_flags` = 33554432,
+    `unit_flags2` = 2048,
+    `type` = 9,
+    `movementId` = 140,
+    `VerifiedBuild` = '0';
+
+DELETE FROM `creature_template_model` WHERE `CreatureID` = 46755;
+INSERT INTO `creature_template_model` SET
+    `CreatureID` = '46755',
+    `idx` = 1,
+    `CreatureDisplayID` = '35250',
+    `probability` = 1.0;
+
+    INSERT INTO `creature_template` SET
+    `entry` = 55272,
+    `name` = 'Mountain Horse',
+    `subname` = NULL,
+    `IconName` = NULL,
+    `minlevel` = 20,
+    `maxlevel` = 20,
+    `faction` = 35,
+    `speed_run` = 1.38571,
+    `BaseAttackTime` = 2000,
+    `RangeAttackTime` = 2000,
+    `unit_class` = 1,
+    `unit_flags2` = 2048,
+    `type` = 1,
+    `movementId` = 140,
+    `VerifiedBuild` = '0';
+
+DELETE FROM `creature_template_model` WHERE `CreatureID` = 55272;
+INSERT INTO `creature_template_model` SET
+    `CreatureID` = '55272',
+    `idx` = 1,
+    `CreatureDisplayID` = '39096',
+    `probability` = 1.0;
+
+INSERT INTO `creature_template` SET
+    `entry` = 55273,
+    `name` = 'Swift Mountain Horse',
+    `subname` = NULL,
+    `IconName` = NULL,
+    `minlevel` = 40,
+    `maxlevel` = 40,
+    `faction` = 35,
+    `speed_run` = 1.38571,
+    `BaseAttackTime` = 2000,
+    `RangeAttackTime` = 2000,
+    `unit_class` = 1,
+    `unit_flags2` = 2048,
+    `type` = 1,
+    `movementId` = 140,
+    `VerifiedBuild` = '0';
+
+DELETE FROM `creature_template_model` WHERE `CreatureID` = 55273;
+INSERT INTO `creature_template_model` SET
+    `CreatureID` = '55273',
+    `idx` = 1,
+    `CreatureDisplayID` = '39095',
+    `probability` = 1.0;
 
 DELETE FROM `achievement_criteria_data` WHERE `criteria_id` IN (13473, 13474, 13475, 13476, 13477, 13478);
 INSERT INTO `achievement_criteria_data` (`criteria_id`, `type`, `value1`, `value2`, `ScriptName`) VALUES
