@@ -1,3 +1,4 @@
+DELETE FROM `skillraceclassinfo_dbc` WHERE `ID` IN (21,27,28,29,30,40,41,48,49,84,85,88,93,133,145,146,147,148,241,243,244,246,281,282,284,624,625,865,866,899,971,972);
 INSERT INTO `skillraceclassinfo_dbc` (`ID`, `SkillID`, `RaceMask`, `ClassMask`, `Flags`, `MinLevel`, `SkillTierID`, `SkillCostIndex`) VALUES
 (21, 293, 4095, 3, 128, 40, 0, 0), -- redo this
 (27, 356, 4095, 1535, 128, 0, 23, 0),
